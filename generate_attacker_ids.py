@@ -73,6 +73,9 @@ if __name__ == '__main__':
 
     with open('attackerIDs.txt', 'w') as f:
         f.write(','.join(getMaliciousVehileIDs(uids, number_of_attackers)))
+        
+    with open('vehicleInfo.txt', 'w') as f:
+        f.write(showInfo(vids, pids, number_of_attackers))
 
     ## showInfo(vids, pids, number_of_attackers)
     ## showMostCommonVehicles(vids)
